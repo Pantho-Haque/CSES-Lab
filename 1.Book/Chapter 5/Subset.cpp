@@ -10,7 +10,6 @@ void Backtracking(vector<vector<int>> &allsubs, vector<int> &subset, int i, vect
 
     subset.push_back(nums[i]);
     search(subset, i + 1, nums);
- 
     subset.pop_back();
 }
 
