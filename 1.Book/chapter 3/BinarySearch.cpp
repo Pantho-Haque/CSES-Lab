@@ -1,4 +1,9 @@
+/*
+when (h-l>1) used
+loop stops in the middle two element while l+1==h
 
+either l or h has the value or doesnt exists
+ */
 int binary(vi v, int toFind)
 {
    int l = 0;
@@ -26,6 +31,12 @@ int binary(vi v, int toFind)
    return -1;
 }
 
+/*
+when (l<h) used
+loop stops in the middle element while l==h
+
+either thats the value or doesnt exists
+ */
 int binaryB(vi v, int toFind)
 {
    int l = 0, h = v.size() - 1;
